@@ -1,0 +1,36 @@
+div {
+    display: flex;
+    background-image: linear-gradient(120deg, #ffb6a4d8, #ff6a45c8);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgb(42, 42, 42);
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-bottom: 20px;
+}
+
+mat-calendar {
+    width: 500px;
+    background-color: whitesmoke;
+    border: 5px solid rgb(42, 42, 42);
+    border-radius:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+    /* Add Media Formatting to calendar. It is too wide as is. */
+
+}
+
+
+
+.task{
+    font-size: 20px;
+    border: 2px solid rgb(42, 42, 42);
+    border-radius: 15px;
+    background-color: rgb(191, 203, 208);
+    padding: 10px;
+    margin-top: 20px;
+}

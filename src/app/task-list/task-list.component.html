@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="task-list">
+      <div class="input-group">
+        <input type="text" placeholder="Add Task" #newTask>
+        <button (click)="addTask(newTask.value)" class="add-button">+</button>
+      </div>
+      <table>
+        <tr *ngFor="let task of tasks; index as i" [class.even]="i % 2 == 0" [class.odd]="i % 2">
+          <td>
+            <p [class.is-complete]="task.isComplete">
+              {{task.title}}
+            </p>
+          </td>
+          <td>
+            <button (click)="removeExistingTask(task)" class="delete-button">x</button>
+            <button (click)="task.ToggleCompletedTask()" class="complete-button">
+              {{task.isComplete? "Undo" : "Complete"}}
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
